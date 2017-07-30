@@ -24,8 +24,7 @@
 ## About the Project
 	
 	This repository contains the client and server code for Macrohard Word. 
-	It does not contain all configuration files and libraries necessary to run with full functionality.
-	Requires a configured MySQL database on the server machine.
+	Requires a MySQL database on the server machine.
 	I wrote this program in 2016.
 
 
@@ -45,6 +44,11 @@
 	It stores files in a MySQL database and uses the google-diff-match-patch library 
 	to resolve concurrent modifications of the same file.
 	
+	To run:
+		1. Clone the repository to your machine. 
+		2. Start a MySQL server
+		3. Run database.SQL found in the project root directory on the MySQL server
+		4. Run both client and server main classes
 	Main Classes:
 		Client - MacrohardWordProcessor/src/client/Client.java
 		Server - MacrohardWordProcessor/src/server/MacroHardServer.java
